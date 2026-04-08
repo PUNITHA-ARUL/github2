@@ -1,0 +1,29 @@
+.gallery {
+  background-color: grey;
+  height: 650px;
+  width: 800px; 
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  text-align: center;
+  justify-content: space-around;
+  
+  margin-left: 350px;
+  
+}
+img {
+    padding: 5px;
+    height: 250px;
+    width: 250px;
+  
+    
+}
+body{
+ background-color: burlywood;
+
+
+}
+.topic{
+  color: white;
+  text-align: center;
+}
