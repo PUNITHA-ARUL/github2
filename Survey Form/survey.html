@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey.css">
+
+</head>
+<body>
+    <div class="container">
+
+        <h1>Survey Form</h1>
+        <p>Please fill out the following survey:</p>
+        <table>
+           <div class="form-group">
+            <tr>
+                <td>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    
+                </td>
+            </tr>
+            <tr>    
+                <td>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </td>
+            </tr>
+            <tr>    
+                <td>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required placeholder="Enter your age">
+                </td>
+            
+            </tr>
+            </div>
+            <div class="form-group">
+            <tr>
+                <td>
+                    <lable >Which option best describes you? </lable><br>
+                    <select id="role" name="role" required>
+                        <option value="">Select an option</option>
+                        <option value="student">Student</option>
+                        <option value="professional">Professional</option>
+                        <option value="other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            </div>
+            <div class="form-group">
+                <tr>
+                    <td>
+                        <lable >Which option best describes your favorite programming language? </lable><br>
+                        <select id="language" name="language" required>
+                            <option value="">Select an option</option>
+                            <option value="python">Python</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="java">Java</option>
+                            <option value="csharp">C#</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+
+                </tr>
+                </div>
+                <div class="form-group">
+                <tr>
+                    <td>
+                        <lable >Which option best describes your experience level with programming? </lable><br>
+                        <select id="experience" name="experience" required>
+                            <option value="">Select an option</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </td>   
+                </tr>
+                </div>
+                <div class="form-group">
+                    <tr>
+                        <td>
+                            <label for="comments">Any additional comments:</label><br>
+                            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
+                        </td>
+                    </tr>
+                </div>
+        </table>
+    </div>
+    
+</body>
+</html>
