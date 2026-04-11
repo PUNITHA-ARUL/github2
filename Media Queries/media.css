@@ -1,30 +1,37 @@
-.container{
+.container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;  
+    justify-content: center;
     margin: 100px;
 }
-.one,.two,.three,.four{
+
+.one,
+.two,
+.three,
+.four {
     background-color: red;
     height: 200px;
     width: 200px;
     flex-basis: 20%;
 
 }
-.two{
+
+.two {
     background-color: blue;
     height: 200px;
     width: 200px;
     flex-basis: 20%;
 }
-.three{
+
+.three {
     background-color: green;
     height: 200px;
     width: 200px;
-    flex-basis: 20%;    
+    flex-basis: 20%;
 }
-.four{
+
+.four {
     background-color: yellow;
     height: 200px;
     width: 200px;
@@ -32,58 +39,79 @@
 }
 
 
-@media screen and (max-width:800px){
-    .one,.two,.three,.four{
-        flex-basis: 40%;
-    }
-    
-}
-@media  screen and (max-width:600px){
-    .one,.two,.three,.four{
+@media screen and (max-width:800px) {
+
+    .one,
+    .two,
+    .three,
+    .four {
         flex-basis: 100%;
     }
-    
 
-    
 }
 
-/*container2{
+@media screen and (max-width:600px) {
+
+    .one,
+    .two,
+    .three,
+    .four {
+        flex-basis: 25%;
+    }
+
+
+
+}
+
+.container02 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    margin: 100px;
-    flex-direction: row;
 }
-.one1{
+
+.one1 {
     background-color: greenyellow;
     height: 200px;
-    width: 100%;
-    flex-basis: 20%;
+    flex-basis: 100%;
+    flex-grow: 1;
+    
 }
-.two1{
+
+.two1 {
     background-color: cyan;
     height: 200px;
-    width: 200px;
+    flex-grow: 1;
     flex-basis: 20%;
-}   
-.three1{
+}
+
+.three1 {
     background-color: magenta;
     height: 200px;
-    width: 200px;
-    flex-basis: 20%;    
+    flex-basis: 20%;
+    flex-grow: 1;
 }
-.four1{
+
+.four1 {
     background-color: orange;
     height: 200px;
-    width: 200px;
     flex-basis: 20%;
+    flex-grow: 1;
 }
- @media screen and (max-width:800px){
-    .one1,.two1,.three1,.four1{
+@media  screen and (max-width:600px) {
+    .one1,
+    .two1,
+    .three1,
+    .four1 {
         flex-basis: 40%;
     }
     
 }
-*/
-
+@media screen and (max-width:800px){
+    .one1,
+    .two1,
+    .three1,
+    .four1 {
+        flex-basis: 100%;
+    }
+}
