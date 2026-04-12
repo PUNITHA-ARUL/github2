@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
     <link rel="stylesheet" href="survey.css">
-
+    
 </head>
 <body>
     <div class="container">
 
         <h1>Survey Form</h1>
         <p>Please fill out the following survey:</p>
+        <form id="surveyForm">
         <table>
            <div class="form-group">
             <tr>
@@ -38,7 +39,7 @@
             <div class="form-group">
             <tr>
                 <td>
-                    <lable >Which option best describes you? </lable><br>
+                    <label >Which option best describes you? </label><br>
                     <select id="role" name="role" required>
                         <option value="">Select an option</option>
                         <option value="student">Student</option>
@@ -51,7 +52,7 @@
             <div class="form-group">
                 <tr>
                     <td>
-                        <lable >Which option best describes your favorite programming language? </lable><br>
+                        <label >Which option best describes your favorite programming language? </label><br>
                         <select id="language" name="language" required>
                             <option value="">Select an option</option>
                             <option value="python">Python</option>
@@ -67,7 +68,7 @@
                 <div class="form-group">
                 <tr>
                     <td>
-                        <lable >Which option best describes your experience level with programming? </lable><br>
+                        <label >Which option best describes your experience level with programming? </label><br>
                         <select id="experience" name="experience" required>
                             <option value="">Select an option</option>
                             <option value="beginner">Beginner</option>
@@ -85,8 +86,27 @@
                         </td>
                     </tr>
                 </div>
+                <div class="form-group">
+                    <tr>
+                        <td>
+                            <button type="submit">Submit Survey</button>
+                        </td>
+                    </tr>
+                </div>
         </table>
+        </form>
     </div>
-    
+    <script>
+        document.getElementById('surveyForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            const data = {};
+            for (let [key, value] of formData.entries()) {
+                data[key] = value;
+            }
+            console.log('Survey Data:', JSON.stringify(data, null, 2));
+            alert('Survey submitted! Check console for JSON data.');
+        });
+    </script>
 </body>
 </html>
