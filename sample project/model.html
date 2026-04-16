@@ -1,0 +1,35 @@
+
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   </head>
+   <body>
+    <p id="bo1">simple</p>
+    <p id="bo2">mid</p>
+    <p id="bo3">rough</p>
+    <button onclick="chanegetext()">Change Text</button>
+    <script>
+      var bo1 = document.getElementById("bo1");
+      var bo2 = document.getElementById("bo2"); 
+      var bo3 = document.getElementById("bo3");
+
+      function chanegetext(){
+        var text1 = bo1.textContent
+        var text2 = bo2.textContent
+        var text3 = bo3.textContent
+
+        bo1.textContent = "hello"
+        bo2.textContent = "world"
+        bo3.textContent = "!"
+
+        console.log(text1)
+        console.log(text2)          
+        console.log(text3)
+
+      }
+
+    </script>
+    </body>   </html>   
