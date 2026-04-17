@@ -5,9 +5,14 @@
 <style>
 
     div{
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
         background-color: red;
+        transition: 2s;
+    }
+
+    .widthmax{
+        width: 970px;
     }
 </style>
 <script>
@@ -15,7 +20,8 @@
     
 
     function change() {
-        box.style.backgroundColor = 'blue';
+       box.setAttribute("class","widthmax");   
+       box.style.backgroundColor = "blue";
     }
 
 
