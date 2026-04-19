@@ -1,28 +1,19 @@
-<div id="box">
+<h2>Click on the text to remove it</h2>
+<h1 id="div" onclick="changetext(event)">one</h1>
+<h1 id="div" onclick="changetext(event)">two</h1>   
+<h1 id="div" onclick="changetext(event)">three</h1> 
+<h1 id="div" onclick="changetext(event)">four</h1>
+<h1 id="div" onclick="changetext(event)">five</h1> 
+<h1 id="div" onclick="changetext(event)">six</h1> 
 
-</div>
-<button onclick="change()">change color</button>
-<style>
 
-    div{
-        width: 200px;
-        height: 200px;
-        background-color: red;
-        transition: 2s;
-    }
 
-    .widthmax{
-        width: 970px;
-    }
-</style>
 <script>
-    var div = document.getElementById('box');
-    
-
-    function change() {
-       box.setAttribute("class","widthmax");   
-       box.style.backgroundColor = "blue";
-    }
+    var h1 = document.getElementById('div');
 
 
+    function changetext(event){
+        var hello= h1.textContent;
+          hello.textContent = event.target.remove();
+        }
 </script>
