@@ -1,8 +1,21 @@
-<input >
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"onkeypress="additem()">
+    <title>Document</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Todolist.css">
+    
+</head>
+<body icon="favicon.ico ">
+    <h1>Todo List</h1>
+    
+<input onkeypress="if(event.key==='Enter'){additem()};"  type="text" placeholder="Add a task"   >
 <button onclick="additem()">Add</button>
 <ul id="list">
-    <li >Item 1
-        <button onclick="deleteItem(event)">Delete</button>
+    <li >Finish the task then
+        <button onclick="startItem(event)">click it</button>
     </li>
 </ul>
 
@@ -14,15 +27,35 @@
     function additem()
     {
        var listitem = document.createElement('li');
-       listitem.innerHTML = input.value + "<button onclick='deleteItem(event)'>Delete</button>"
+       listitem.innerHTML = input.value + "<button onclick='deleteItem(event)'>Delete</button>";  
        ul.append(listitem)
-    
+       var box= document.querySelector('#list');
+       box.insertAdjacentElement('afterbegin', listitem);
+       input.value = "";    
+       var startButton = document.createElement('button');
+       startButton.textContent= 
+
+
+       
        
     }
 
     function deleteItem(event)
-     {
-        event.target.parentElement.remove();
+    {   
+        var button = event.target;
+        var li = button.parentElement;
+        ul.removeChild(li);
+    }
+    function startItem(event)
+    {
+        var button = event.target;
+        var li = button.parentElement;
+        li.style.textDecoration = "line-through";
     }
 
+   
+
 </script>
+
+</body>
+</html>
