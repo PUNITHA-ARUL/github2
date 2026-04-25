@@ -12,7 +12,7 @@
     <h1>Todo List</h1>
     
 <input onkeypress="if(event.key==='Enter'){additem()};"  type="text" placeholder="Add a task"   >
-<button onclick="additem()">Add</button>
+<button onclick="additem(),onclick=startItem(event)">Add</button>
 <ul id="list">
     <li >Finish the task then
         <button onclick="startItem(event)">click it</button>
@@ -25,15 +25,16 @@
     var input = document.querySelector('input');
     
     function additem()
-    {
+    { 
+        var startbutton = document.createElement('button')+;
+        startbutton.innerHTML ="Start";
+        
        var listitem = document.createElement('li');
        listitem.innerHTML = input.value + "<button onclick='deleteItem(event)'>Delete</button>";  
        ul.append(listitem)
        var box= document.querySelector('#list');
        box.insertAdjacentElement('afterbegin', listitem);
-       input.value = "";    
-       var startButton = document.createElement('button');
-       startButton.textContent= 
+       
 
 
        
