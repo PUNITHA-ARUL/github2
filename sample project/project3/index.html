@@ -2,15 +2,85 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Form</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=BJCree:regular,500,600,700" rel="stylesheet" />
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Student Form</title>
+   <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+Ol+Chiki:regular,500,600,700" rel="stylesheet" />
 </head>
 
 <body>
-    <h1>Student </h1>
-    
 
-</body
+   <h1>STUDENT DETAILS</h1>
+
+
+   <form class="box1">
+      <div class="group-from1">
+         <label>Name: <input type="text" id="id" required></label>
+      </div>
+      <div class="group-from1"> 
+         <label>Age: <input type="number" id="age" required></label>
+      </div>
+
+      <div class="group-from1">
+         <label>Gender:
+            <input type="radio" id="male" name="gender" value="male">Male
+            <input type="radio" id="female" name="gender" value="female">Female
+         </label>
+      </div>
+      <div class="group-from1">
+         <label>Coures: <input type="text" id="course" required></label>
+      </div>
+      <div class="group-from1">
+         <label>E-mail: <input type="email" id="email" required></label>
+      </div>
+      <div class="group-from1">
+         <label >
+            <button>Save</button>
+         </label>
+
+      </div>
+   </form>
+
+
+   <table class="box2" border="1" style="border-collapse: collapse";>
+       <div class="group-from2">
+      <thead>
+         <tr>
+               <th>Name</th>
+               <th>Age</th>
+               <th>Gender</th>
+               <th>Course</th>
+               <th>E-mail</th>
+               <th>Action</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>balaji</td>
+            <td>21</td>
+            <td>male</td>
+            <td>B-phram</td>
+            <td>vijibalaij@gmail.com</td>
+            <td><button>Delete</button></td>
+         </tr>
+      </tbody>
+      <tfoot>
+         <tr>
+            <td>punitha</td>
+            <td>19</td>
+            <td>female</td>
+            <td>Bca</td>
+            <td>arulpunitha@gmail.com</td>
+            <td><button>Delete</button></td>
+
+         </tr>
+      </tfoot>
+              
+       </div>   
+      
+
+   </table>
+</body>
+
+</html>
