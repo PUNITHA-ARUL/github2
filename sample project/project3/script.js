@@ -1,9 +1,8 @@
-var name=document.getElementById("name");
-var age=document.getElementById("age")
-//var gender=document.getElementById("female,male")
+var name= document.getElementsById("name")
 
-function call(event){
-    var Name= name.textcontent("name")
-    console.log(Name.value)
 
+function call()
+{
+    var Name = name.textcontent("punitha")
+    console.log(Name)
 }
