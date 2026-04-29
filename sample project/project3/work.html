@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Number from 1 to 10</h1>
+    <input type="value" id="input">
+    <button onclick="call()" id="button">check</button>
+        <p id="word1">your are Right/wrong!</p>
+        <p id="word2">your score:10 </p>
+
+        <script>
+            var input = document.getElementById("input")
+            var word1 = document.getElementById("word1")
+            var word2 = document.getElementById("word2")
+            var totalscore = 10
+
+            var randomnumber = Math.floor(Math.random() * 10) + 1;
+            function call() {
+                var enterednumber = input.value
+
+                if (randomnumber == enterednumber) {
+                    console.log("Right")
+                    word1.textContent = ("Your are Right")
+                    alert("Enjoy buddy you won")
+                    
+                    
+
+
+                }
+                else {
+                    console.log("Wrong")
+                    totalscore = totalscore - 1
+                    word2.textContent ="score:" + totalscore
+                    
+                    word1.textContent = (" you are Wrong!")
+                }
+
+            }
+
+
+
+
+        </script>
+
+<style>
+body{
+    text-align: center;
+    border: 2px black solid;
+    width: 500px;
+    font-family: 'Segoe U', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+#input{
+    border-radius: 20px;
+    background-color: aquamarine;
+    color:blueviolet;
+}
+#button{
+    border-radius: 5px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:rgb(189, 65, 65)
+}
+#word2{
+    border: 2px black solid;
+    width: 110px;   
+    margin-left: 200px;
+    background-color: blue;
+}
+
+</style>
+
+</body>
+
+</html>
