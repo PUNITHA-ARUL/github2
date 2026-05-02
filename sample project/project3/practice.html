@@ -1,16 +1,16 @@
-<h1 id="result">Name</h1>
-<button onclick="call(event)">John</button>
-<button onclick="call(event)">Hari</button>
-<button onclick="call(event)">Praveen</button>
+<h1 class="ok">one</h1>
+<h1 class="ok">two</h1>
+<h1 class="ok">three</h1>
 
 
 <script>
- var h1= document.getElementById("result")
- 
- function call(event)
- {
-   h1.textContent=event.target.textContent
-    
- }
+var select = document.querySelectorAll(".ok")
+for(count=0;count<select.length;count=count+1)
+{
+  console.log(select[count])
+}
+
+
 
 </script>
+
