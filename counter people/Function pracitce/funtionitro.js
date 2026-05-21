@@ -25,3 +25,29 @@ function weather1(frhrenheit)
 }
 
 console.log(text)
+
+//To use the returned value, you can store it in a variable or display it
+function call()
+{
+    return"Hello"
+}
+
+// display the returned value
+console.log(call())
+
+// variable as store the function
+// using console.log or html
+let greeting= console.log(call());
+
+//function can be called from anywhere
+//like events,other function,any code block
+function hello()
+{
+    return "Hello World"
+}
+
+function showhello()
+{
+    document.getElementById("demo").innerHTML=hello();
+}
+
