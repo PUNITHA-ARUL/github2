@@ -1,3 +1,4 @@
+// maximum number of argument object
 function findmax()
 {
     let max= -Infinity
@@ -13,16 +14,17 @@ function findmax()
 
 console.log('Here your infinity number', + findmax(300,400,500))
 
+// minimum number of argument object
 function findmin()
 {
-   let  max= Infinity
+   let  min= Infinity
     for( i=0; i < arguments.length; i++)
     {
-        if(arguments[i] < max)
+        if(arguments[i] < min)
         {
-            max= arguments[i]
+            min= arguments[i]
         }
     }
-return max
+return min
 }
 console.log('Here your infinity number', + findmin(300,400,500))
