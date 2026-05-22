@@ -28,3 +28,11 @@ function findmin()
 return min
 }
 console.log('Here your infinity number', + findmin(300,400,500))
+
+// sum of the number 
+function findsum(a,b,c)
+{
+    return (a+b+c)
+}
+console.log('Here your infinity number', + findsum(300,400,500))
+
