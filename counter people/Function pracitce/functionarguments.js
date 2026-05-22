@@ -53,3 +53,31 @@ function findeven() {
 }
 console.log('Here your infinity number', + findeven(300, 400, 500))
 
+//ingore the negative number
+function findmaxpositive()
+{
+    let max= -Infinity
+    for(i=0; i < arguments.length; i++){
+        if(arguments[i] >= 0 && arguments[i] > max ){
+            max = arguments[i]
+        }
+        
+    }    
+  return max    
+}
+console.log('Here your infinity number',  findmaxpositive(-1,4,3));
+
+//check all number is positive
+function findallpositive()
+{
+    for(i=0; i < arguments.length; i++)
+    {
+        if(arguments[i] >=0 ){
+           return true
+        }
+        else{
+           return false
+        }
+    }
+}
+console.log('Here your infinity number',  findallpositive(1,4,3));
