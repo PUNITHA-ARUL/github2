@@ -1,12 +1,51 @@
 <html>
-    <body>
-        <h1></h1>
-        <script>
-          function findmax()
-          {
-            
-          }
 
-        </script>
-    </body>
+<body>
+    <script>
+        function findmax() {
+           let max = -Infinity
+            for (i = 0; i < arguments.length; i++) {
+                if (arguments[i] > max) {
+                    max = arguments[i]
+                }
+
+            }
+            return max
+        }
+        function findmin(){
+          let min= Infinity
+           for(i=0; i < arguments.length; i++){
+            if(arguments[i] < min){
+                min= arguments[i]
+            }
+           }
+           return min
+        }
+        function findsum(){
+            let sum= 0
+            for(i=0; i < arguments.length;i++){
+                sum += arguments[i];
+            }
+            return sum
+        }
+
+let maxl =document.createElement('h1');
+let minl =document.createElement('h1');
+let suml =document.createElement('h1');
+let btn=document.getElementById('btn')
+
+maxl.textContent='Max:'+findmax(10,50);
+minl.textContent='Min: '+findmin(10,50);
+suml.textContent='Sum: '+findsum(10,50);
+
+document.body.appendChild(maxl);
+document.body.appendChild(minl);
+document.body.appendChild(suml);
+    
+    
+    </script>
+    
+
+</body>
+
 </html>
