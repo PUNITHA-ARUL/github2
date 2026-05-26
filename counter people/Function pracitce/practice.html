@@ -12,19 +12,33 @@
         }
 
 
-        console.log(findmax(20, 30));
+       // console.log(findmax(20, 30));
         // max number modern js
         function findmax1(...nums) {
             return Math.max(...nums)
 
         }
-        console.log(findmax1(20, 30));
+        //console.log(findmax1(20, 30));
 
         function multiply(a, b) {
             return a + b;
         }
 
-        console.log(multiply(x, y));
+        //console.log(multiply(x, y));
+
+        //call by reference:
+        /*Call by reference change the original value, but call by value can't change the original value*/
+        let call= {name:'Bob', age:20}
+
+        function reference(obj){
+               obj.name='jennie'
+               console.log('insdie function: ',obj)
+        }
+       reference(call)
+       console.log('outside fuction: ',call)
+
+
+
     </script>
 </body>
 
