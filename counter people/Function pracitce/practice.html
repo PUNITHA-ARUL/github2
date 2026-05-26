@@ -27,7 +27,8 @@
         //console.log(multiply(x, y));
 
         //call by reference:
-        /*Call by reference change the original value, but call by value can't change the original value*/
+        /*Call by reference change the original value, but call by value can't change the original value.
+        If you reassigning the parameter does not affect the original*/
         let call= {name:'Bob', age:20}
 
         function reference(obj){
@@ -37,7 +38,18 @@
        reference(call)
        console.log('outside fuction: ',call)
 
-
+       //Function expresstion:
+       //standard funtion
+        function standard(a,b){
+            return a/b
+        }
+      //expresstion function 
+      //expresstion as create variable stored the function, can be store the call arguments. 
+      let expresstion = function(a,b){
+        return a/b
+      }
+      console.log(standard(2,5))
+      console.log(expresstion(2,5))
 
     </script>
 </body>
