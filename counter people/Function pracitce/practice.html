@@ -50,6 +50,18 @@
       }
       console.log(standard(2,5))
       console.log(expresstion(2,5))
+    
+      //It can be used to callback the another function
+
+      function run(fn){
+        return fn()
+      }
+
+    let name=function()
+      {
+        return 'john'
+      }
+      console.log(run(name))
 
     </script>
 </body>
