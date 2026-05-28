@@ -27,7 +27,17 @@
             };
             console.log(user.showHobbies())// undefined 
 
-            
+            //this keyword with arrow functions:
+            const user2= {
+                name:"Alice",
+                hobbies: ["Reading", "Coding"],
+                showHobbies: function() {
+                    this.hobbies.forEach((hobby) => {
+                        console.log(`${this.name} likes ${hobby}`);
+                    });
+                }
+            };
+            console.log(user2.showHobbies())//output
         </script>
     </body>
 </html>
