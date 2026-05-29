@@ -13,7 +13,8 @@
             console.log('square of 4:' , multiply2(4))
 
             //this keyword
-            let greeting= { name: 'jhon', greet: () => {return this.name;}};
+            let greeting= { name: 'jhon',greet: () => {return greeting.name;}};
+            console.log(greeting.greet)
 
             //this keyword with regular functions:
             const user= {
@@ -25,7 +26,7 @@
                     });
                 }
             };
-            console.log(user.showHobbies())// undefined 
+            //console.log(user.showHobbies())// undefined 
 
             //this keyword with arrow functions:
             const user2= {
@@ -37,7 +38,7 @@
                     });
                 }
             };
-            console.log(user2.showHobbies())//output
+           // console.log(user2.showHobbies())//output
         </script>
     </body>
 </html>
