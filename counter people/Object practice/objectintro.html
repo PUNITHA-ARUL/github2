@@ -1,6 +1,7 @@
 <html>
     <body>
-
+    <h1>Object Intro</h1>
+    <p id="demo"></p>
         <script>
             //create object
             const car = {
@@ -26,16 +27,24 @@
 
             //object methods
             const person= {
-                firstname:'aniruth',
+                firstname:'Aniruth',
                 lastname:'ravichandran',
                 age:38,
                 fullname: function(){
-                    return this.firstname +" "+ this.lastname;
+                    return  'Hello';
                 }
+                
             };
-            console.log(person.fullname())
-
+            // you can change, added, delete the objects
+            person.nickname='Ani'
+            person.age=34;
+            delete person.lastname
             
+            console.log(person.fullname())
+        document.getElementById("demo").innerHTML=person.firstname + " " + person.lastname + " age is " + person.age + ' and his nickname: '+ person.nickname;
+            
+           
+
         </script>
     </body>
 </html>
